@@ -1,0 +1,34 @@
+Sending Logstash's logs to /home/mark/elastic/logstash-6.0.0-rc1/logs which is now configured via log4j2.properties
+[2017-10-23T21:42:47,924][INFO ][logstash.modules.scaffold] Initializing module {:module_name=>"netflow", :directory=>"/home/mark/elastic/logstash-6.0.0-rc1/modules/netflow/configuration"}
+[2017-10-23T21:42:47,932][INFO ][logstash.modules.scaffold] Initializing module {:module_name=>"fb_apache", :directory=>"/home/mark/elastic/logstash-6.0.0-rc1/modules/fb_apache/configuration"}
+[2017-10-23T21:42:48,025][INFO ][logstash.setting.writabledirectory] Creating directory {:setting=>"path.queue", :path=>"/home/mark/elastic/logstash-6.0.0-rc1/data/queue"}
+[2017-10-23T21:42:48,027][INFO ][logstash.setting.writabledirectory] Creating directory {:setting=>"path.dead_letter_queue", :path=>"/home/mark/elastic/logstash-6.0.0-rc1/data/dead_letter_queue"}
+[2017-10-23T21:42:48,321][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[2017-10-23T21:42:48,338][INFO ][logstash.agent           ] No persistent UUID file found. Generating new UUID {:uuid=>"de1edc00-9dbe-4295-b5c6-89a6cb2f1263", :path=>"/home/mark/elastic/logstash-6.0.0-rc1/data/uuid"}
+[2017-10-23T21:42:48,767][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2017-10-23T21:42:49,677][INFO ][logstash.filters.multitest] Using version 0.1.x filter plugin 'multitest'. This plugin isn't well supported by the community and likely has no maintainer.
+[2017-10-23T21:42:50,790][INFO ][logstash.pipeline        ] Starting pipeline {:pipeline_id=>"main", "pipeline.workers"=>1, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>5, "pipeline.max_inflight"=>125, :thread=>"#<Thread:0x5dcae2d@/home/mark/elastic/logstash-6.0.0-rc1/logstash-core/lib/logstash/pipeline.rb:290 run>"}
+[2017-10-23T21:42:50,805][INFO ][logstash.pipeline        ] Pipeline started {"pipeline.id"=>"main"}
+[2017-10-23T21:42:50,838][INFO ][logstash.agent           ] Pipelines running {:count=>1, :pipelines=>["main"]}
+[2017-10-23T21:42:50,861][INFO ][logstash.filters.multitest] multi_filter called, 1 events
+{
+          "host" => "ip-172-31-25-109",
+      "@version" => "1",
+    "@timestamp" => 2017-10-23T21:42:50.853Z,
+       "message" => "ok"
+}
+[2017-10-23T21:42:51,836][INFO ][logstash.filters.multitest] multi_filter called, 1 events
+{
+          "host" => "ip-172-31-25-109",
+      "@version" => "1",
+    "@timestamp" => 2017-10-23T21:42:51.827Z,
+       "message" => "ok"
+}
+[2017-10-23T21:42:52,833][INFO ][logstash.filters.multitest] multi_filter called, 1 events
+{
+          "host" => "ip-172-31-25-109",
+      "@version" => "1",
+    "@timestamp" => 2017-10-23T21:42:52.826Z,
+       "message" => "ok"
+}
+[2017-10-23T21:42:52,877][INFO ][logstash.pipeline        ] Pipeline terminated {"pipeline.id"=>"main"}
