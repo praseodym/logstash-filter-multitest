@@ -1,0 +1,29 @@
+Sending Logstash's logs to /home/mark/elastic/logstash-5.6.2/logs which is now configured via log4j2.properties
+[2017-10-23T21:26:58,085][INFO ][logstash.modules.scaffold] Initializing module {:module_name=>"netflow", :directory=>"/home/mark/elastic/logstash-5.6.2/modules/netflow/configuration"}
+[2017-10-23T21:26:58,093][INFO ][logstash.modules.scaffold] Initializing module {:module_name=>"fb_apache", :directory=>"/home/mark/elastic/logstash-5.6.2/modules/fb_apache/configuration"}
+[2017-10-23T21:26:58,338][INFO ][logstash.filters.multitest] Using version 0.1.x filter plugin 'multitest'. This plugin isn't well supported by the community and likely has no maintainer.
+[2017-10-23T21:26:58,509][INFO ][logstash.pipeline        ] Starting pipeline {"id"=>"main", "pipeline.workers"=>1, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>5, "pipeline.max_inflight"=>125}
+[2017-10-23T21:26:58,517][INFO ][logstash.pipeline        ] Pipeline main started
+[2017-10-23T21:26:58,576][INFO ][logstash.filters.multitest] multi_filter called, 1 events
+{
+          "host" => "ip-172-31-25-109",
+      "@version" => "1",
+    "@timestamp" => 2017-10-23T21:26:58.564Z,
+       "message" => "ok"
+}
+[2017-10-23T21:26:58,594][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2017-10-23T21:26:59,534][INFO ][logstash.filters.multitest] multi_filter called, 1 events
+{
+          "host" => "ip-172-31-25-109",
+      "@version" => "1",
+    "@timestamp" => 2017-10-23T21:26:59.528Z,
+       "message" => "ok"
+}
+[2017-10-23T21:27:00,533][INFO ][logstash.filters.multitest] multi_filter called, 1 events
+{
+          "host" => "ip-172-31-25-109",
+      "@version" => "1",
+    "@timestamp" => 2017-10-23T21:27:00.527Z,
+       "message" => "ok"
+}
+[2017-10-23T21:27:01,531][WARN ][logstash.agent           ] stopping pipeline {:id=>"main"}
